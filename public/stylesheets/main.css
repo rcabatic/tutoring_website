@@ -1,0 +1,93 @@
+.navbar{
+	background-color: rgb(220, 199, 170, 0.4);
+	font-size: 1.3rem;
+	
+}
+
+a {
+  color: #598241;
+}
+
+#heading-group h1{
+	margin-left: 10px;
+	font-size: 2.8rem;
+}
+
+#heading-group p{
+	text-align: center;
+}
+
+.content{
+	margin-bottom: 50px;
+}
+
+.blurb{
+	height: 600px;
+	/* overflow: auto; */
+}
+/* .blurb h2{
+	font-size: 3rem;
+} */
+
+.blurb ol{
+	font-size: 1.125rem;
+	line-height: 1.60;
+	text-align: justify;
+	background-color: rgb(237,225,180, 0.01);
+}
+.blurb p{
+	/* color: #2e4756; */
+	font-size: 1.125rem;
+	line-height: 1.60;
+	text-align: justify;
+	background-color: rgb(237,225,180, 0.01);
+}
+
+
+#people-jumbo{
+	background-image: url("https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+  	background-size: cover;
+	background-position: 50% 30%;
+}
+
+#people-jumbo .container{
+	background-color: rgb(200, 200, 200, 0.1);
+	margin-left:0; margin-right:auto;
+	width: 510px;
+}
+
+#resources-jumbo{
+	background-image: url("https://images.unsplash.com/photo-1497633762265-9d179a990aa6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80"); /* books */
+  	background-size: cover;
+	background-position: 50% 30%;
+}
+
+#resources-jumbo .container{
+	width: 500px;
+	margin-left:auto; margin-right:0;
+	background-color: rgb(200, 200, 200, 0.05);
+	color: rgb(240, 240, 240);
+	text-align: justify;
+}
+/* CARDS STYLES */
+.row{
+	border-radius: 25px;
+	margin-bottom: 10px;
+}
+
+.row .col-md-4{
+	border-radius: 25px;
+}
+
+.name{
+	/* color: rgb(20, 20, 70); */
+	color: #2e2014;
+}
+
+.footer-copyright{
+	color: rgb(100, 100, 100, 0.8);
+}
+
+.page-footer{
+	background-color: rgb(220, 199, 170, 0.5);
+}

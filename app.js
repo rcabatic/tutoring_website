@@ -7,6 +7,8 @@ var express 	= require("express"),
 	methodOverride			= require("method-override"),
 	  flash		= require("connect-flash");
 
+//========= Requiring Routes ================ JS files ===
+var indexRoutes			= require("./routes/index");
 
 //====================================
 
@@ -14,7 +16,6 @@ var express 	= require("express"),
 app.use(express.static(__dirname + "/public"));
 app.set("view engine", "ejs");
 app.use(methodOverride("_method"));
-//app.use(flash()); //flash messages.
 
 //Call function on every single route.
 app.use(function(req, res, next){
@@ -27,7 +28,7 @@ app.use(function(req, res, next){
 
 //=========================ROUTER USE FUNCTION:===========================
 //ROUTES HERE..
-
+app.use("/", indexRoutes);
 
 
 //==================================== APP listen==============================================
