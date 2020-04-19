@@ -1,33 +1,42 @@
 .navbar{
 	background-color: rgb(220, 199, 170, 0.4);
-	font-size: 1.3rem;
-	
+	font-size: 1.5rem;
 }
 
 a {
   color: #598241;
 }
 
-#heading-group h1{
-	margin-left: 10px;
-	font-size: 2.8rem;
+.img-fluid{
+	background-color: rgb(220, 220, 240, 0.5);
 }
 
-#heading-group p{
+h1, h2 {
+	font-family: 'Arvo', serif;
+}
+
+
+#heading-group h1{
+	margin-left: 10px;
+	font-size: 2.4rem;
 	text-align: center;
 }
 
-.content{
-	margin-bottom: 50px;
+#heading-group p{
+	margin-top: 20px;
+	text-align: justify;
+	font-size: 1.00rem;
+	line-height: 1.50;
 }
 
-.blurb{
-	height: 600px;
-	/* overflow: auto; */
-}
-/* .blurb h2{
-	font-size: 3rem;
+/* .content{
+	margin-bottom: 50px;
 } */
+
+.blurb{
+	height: auto;
+	overflow: auto;
+}
 
 .blurb ol{
 	font-size: 1.125rem;
@@ -43,9 +52,17 @@ a {
 	background-color: rgb(237,225,180, 0.01);
 }
 
+.image-fluid{
+	max-width: 100%;
+	height: auto;
+}
+
+
+
 
 #people-jumbo{
-	background-image: url("https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+	/* background-image: url("https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"); */
+	background-image: url("https://images.unsplash.com/photo-1494319827402-c4b839aed26b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
   	background-size: cover;
 	background-position: 50% 30%;
 }
@@ -56,6 +73,7 @@ a {
 	width: 510px;
 }
 
+
 #resources-jumbo{
 	background-image: url("https://images.unsplash.com/photo-1497633762265-9d179a990aa6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80"); /* books */
   	background-size: cover;
@@ -63,12 +81,39 @@ a {
 }
 
 #resources-jumbo .container{
-	width: 500px;
+	width: 600px;
 	margin-left:auto; margin-right:0;
 	background-color: rgb(200, 200, 200, 0.05);
 	color: rgb(240, 240, 240);
 	text-align: justify;
 }
+
+
+
+@media screen and (max-width: 768px) {
+   #people-jumbo {
+	   background-image: none;
+	   background-color: #c9bd9f; /* Changes to solid beige background */
+  	}
+	#people-jumbo .container{
+	background-color: rgb(200, 200, 200, 0.1);
+	overflow: auto;
+	width: auto;
+	}
+	
+	#resources-jumbo {
+	   background-image: none;
+	   background-color: #969287; /* Changes to solid gray background */
+  	}
+	#resources-jumbo .container{
+	background-color: rgb(200, 200, 200, 0.05);
+	overflow: auto;
+	width: auto;
+	}
+	
+}
+
+
 /* CARDS STYLES */
 .row{
 	border-radius: 25px;
